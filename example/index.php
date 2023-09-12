@@ -25,7 +25,6 @@ $app->makeNotfoundHandler(function(){
     ErrorHandler::Notfound("Route not found");
 }); 
 
-
     $app->run();
     
 } catch (\Throwable $th) {
