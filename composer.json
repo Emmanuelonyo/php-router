@@ -1,0 +1,20 @@
+{
+    "name": "emmanuelonyo/php-router",
+    "description": "A simple php router that helps php developers code faster",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Emmanuelonyo\\PhpRouter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emmanuel Onyo",
+            "email": "emmanuelonyo34@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

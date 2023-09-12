@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'emmanuelonyo/php-router',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'aa9089f22bf86f01566e152d49ac8dfcb1dc549b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'emmanuelonyo/php-router' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'aa9089f22bf86f01566e152d49ac8dfcb1dc549b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
