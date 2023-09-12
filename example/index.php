@@ -18,7 +18,7 @@ try {
 `src/routes` directory. This allows the code in `api.php` to be executed and any functions, classes,
 or variables defined in that file to be accessible in the current script. */
 
-require __DIR__ . "/src/routes/api.php";
+require __DIR__ . "/src/routes/apiRoutes.php";
 require __DIR__ . "/src/routes/viewRoutes.php";
 
 $app->makeNotfoundHandler(function(){
