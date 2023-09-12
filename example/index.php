@@ -8,8 +8,8 @@ $dotenv->load();
 //set required environment variables
 // $dotenv->required(['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS', 'SMTP_USER', 'SMTP_HOST', 'SMTP_PORT', 'SMTP_PASS']);
 
-use Emmanuelonyo\PhpRouter\Error\ErrorHandler;
 use Emmanuelonyo\PhpRouter\Router;
+use mmanuelonyo\PhpRouter\Error\ErrorHandler;
 
 $app = new Router();
 try {
@@ -21,7 +21,7 @@ or variables defined in that file to be accessible in the current script. */
 require __DIR__ . "/src/routes/apiRoutes.php";
 require __DIR__ . "/src/routes/viewRoutes.php";
 
-$app->makeNotfoundHandler(function(){
+$app->makeNotfoundHandler(function(){    
     ErrorHandler::Notfound("Route not found");
 }); 
 
