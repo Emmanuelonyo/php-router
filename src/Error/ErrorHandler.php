@@ -1,6 +1,6 @@
 <?php
 
-namespace mmanuelonyo\PhpRouter\Error;
+namespace Emmanuelonyo\PhpRouter\Error;
 use Emmanuelonyo\PhpRouter\Http\{Request, Response};
 
 class ErrorHandler{

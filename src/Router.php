@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace Emmanuelonyo\PhpRouter;
 
+use Emmanuelonyo\PhpRouter\Http\Request;
+use Emmanuelonyo\PhpRouter\Http\Response;
+
 class Router
 {
     private array $handler;
@@ -96,8 +99,9 @@ class Router
                 $callback = $this->notFoundHandler;
             }
         }
-    
-        call_user_func_array($callback, [$params]);
+        $req = new Request;
+        $res = new Response;
+        call_user_func_array($callback, [$params, $req, $res]);
     }
 
 }

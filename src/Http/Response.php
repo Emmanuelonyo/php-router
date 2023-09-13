@@ -10,6 +10,7 @@ namespace Emmanuelonyo\PhpRouter\Http ;
 
 
 class Response{
+    protected $title;
     
     public static function setHeaders(array $headers):Void {
         foreach($headers as $header){
@@ -26,5 +27,17 @@ class Response{
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($data);
         exit();
+    }
+
+    public function render(string $view, array $data = ["title" => "Dashboard"])
+    {
+        // $view = str_replace('.', '/', $view);
+        extract($data);
+        
+        if(isset($title)){
+            $this->title = $title;
+        }
+
+        require_once  $view;
     }
 }
